@@ -13,26 +13,46 @@
   </head>
   <body>
     <header>
-      <nav class="title-bar"
-      <button class="drpdwn">menu</button>
-        <ul class="title-bar-nav">
-          <li><a class="nav-bar" href="">projects</a></li>
-          <li><a class="nav-bar" href="">skills</a></li>
-          <li><a class="nav-bar" href="">resume</a></li>
-          <li><a class="nav-bar" href="">contact</a></li>
-        </ul>
-      </nav>
+      <div class="title-bar">
+      <button onclick="myFunction()" type="button" class="dropbtn" name="button"></button>
+        <div id="dropMenu" class="title-bar-nav">
+          <a class="nav-bar" href="#skills">skills</a>
+          <a class="nav-bar" href="#">projects</a>
+          <a class="nav-bar" href="#">resume</a>
+          <a class="nav-bar" href="#">contact</a>
+        </div>
+      </div>
     </header>
+  <article class="intro">
   <h1 id="main_name">KD Mundale</h1>
   <h1 id="special">Bringing Unique Perspective<br><span>to Web/App Design<br>&
     Development</span></h1>
+    <div class="main_intro_div">
     <img id="me" src="me2.jpg" alt="portrait of Katherine Mundale on a wooded bike trail
     standing beside her bike and giving the 'hang-loose' hand signal">
-    <p id="main_intro"> If we all travel<br><br>the same path,<br><br>we'll all have<br><br>the same view.</p>
+    <p id="main_intro"> If we all traveled<br><br>the same road,<br><br>we'd all have the<br><br>same perspective.</p>
+    <p id="blurb">I havent followed the conventional path to the
+      world of web, app, and software development.<br>
+      For the first half of my life I have been a counselor, chemist, mediator,
+      coach, ..... a bartender. I have met, spoken with, and come to know and appreciate people from every walk of life.<br>
+      Sometimes the best ideas come from the most unexpected
+       places.<br>Diversity and adverisity are provenance for new perspectives and creative soulutions.</p>
+    </div>
+  </article>
   <article class="main">
-    <section class="main_intro">
+    <section id="skills" class="main_content">
+
+      <h2 class="skill_h">I listen.</h2>
+      <h2 class="skill_h">I ask.</h2>
+      <h2 class="skill_h">I know people.</h2>
+      <h2 class="skill_h">I look to inspire.</h2>
+      <h2 class="skill_h">I perservere.</h2>
+
     </section>
-    <section class="main_pic">
+    <section id="projects" class="main_content">
+    </section>
+    <section id="resume" class="main_content">
+
     </section>
 
   </article>
