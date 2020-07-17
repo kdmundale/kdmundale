@@ -182,6 +182,25 @@ ul {
   text-shadow: rgb(97,194,233) 0px 0px 20px;
 }
 
+.proj {
+  width: 60px;
+  height: 60px;
+}
+
+td {
+  color:white;
+  padding: 10px 5px;
+  border: 1px solid rgb(125,240,251);
+}
+#resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1000px;
+}
+
+
 @media only screen and (min-width: 375px){
 
   #blurb {
