@@ -110,6 +110,9 @@ ul {
   z-index: 10;
   padding-top: 20px;
   width: 90%;
+  text-shadow: rgb(0,0,0) 0px 0px 10px;
+  text-shadow: rgb(125,240,251) 0px 0px 15px;
+  text-shadow: rgb(97,194,233) 0px 0px 20px;
   font-size: calc(45px + 80 * ((100vw - 300px)/1300));
   color: rgb(125,240,251);
 }
