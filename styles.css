@@ -14,11 +14,11 @@ body {
 header {
   position: fixed;
   top: 0;
+  width: 100%;
   z-index: 50;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width:100vw;
   height: 80px;
   background: linear-gradient(rgb(85,106,147), rgb(35,35,35));
 }
@@ -42,7 +42,7 @@ ul {
 .title-bar-nav {
   display: none;
   position: absolute;
-  top:75px; right:10px;
+  top:75px; left: 50%;
   font-size: 28px;
   background-color: rgb(68,128,223);
   min-width: 200px;
@@ -72,7 +72,7 @@ ul {
 
 .dropbtn {
   position: absolute;
-  top: -7px; right: 15px;
+  top: -7px; left: 83%;
   color: rgb(194,194,194);
   font-family: 'Roboto', sans-serif;
   font-variant: small-caps;
@@ -109,6 +109,7 @@ ul {
   z-index: 10;
   padding-top: 20px;
   width: 90%;
+  font-family: 'Montserrat', sans-serif;
   text-shadow: rgb(0,0,0) 0px 0px 10px;
   text-shadow: rgb(125,240,251) 0px 0px 15px;
   text-shadow: rgb(97,194,233) 0px 0px 20px;
@@ -119,14 +120,15 @@ ul {
 #special {
   position: relative;
   font-family: 'Roboto', sans-serif;
-  top:460px; left: 0;
+  top:500px; left: 0;
   text-shadow: rgb(25,25,25) 3px 0 10px;
   background-color: rgba(35,35,35,.8);
   font-size: calc(23px + 15 * ((100vw - 300px)/1300));
   width: 100%;
-  color: rgb(97,194,233);
-  padding: 20px;
+  color: rgb(165, 156, 255);
+  margin: 20px;
   z-index: 10;
+  padding: 20px 0 20px 0;
 }
 
 #me {
@@ -136,17 +138,18 @@ ul {
 }
 
 #main_intro {
-  background-color: rgba(35,35,35,.6);
+  background-color: rgba(25,25,25,.6);
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
   font-size: calc(20px + 8 * ((100vw - 300px)/1300));
   color: rgb(125,240,251);
   position: absolute;
-  top:220px; left: 5%;
-  padding: 20px;
+  top:200px; left: 5%;
+  padding: 20px 0 20px 20px;
   text-align: center;
   text-shadow: rgb(0,0,0) 0px 0px 10px;
+  text-shadow: rgb(165, 156, 255)1px 1px 10px;
   text-shadow: rgb(125,240,251) 0px 0px 15px;
   text-shadow: rgb(97,194,233) 0px 0px 20px;
 }
@@ -234,14 +237,16 @@ td {
   }
 
   .title-bar-nav {
+    position: relative;
+    left: 0;
     top: -10px;
     background-color: rgba(68,128,223,0);
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     justify-content: space-around;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
   }
 
   .title-bar-nav a {
@@ -271,11 +276,12 @@ td {
   }
 
   .main_intro_div {
-    margin-top: 190px;
+    width: 100%;
+    margin-top: 200px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
   }
   #main_name {
@@ -284,34 +290,34 @@ td {
 
   #me {
     position: relative;
-    top: 0; left: 0;
+    top: 0; right: 0;
     display: inline-block;
-    width: 40%;
+    margin-right: 25px;
+    width: 45%;
     z-index: 40;
   }
 
   #special {
     display: block;
-    top: 180px; left: 20px;
+    top: 200px; left: 20px;
     width: 100%;
-    padding: 0px 10px 10px 0;
+    padding: 0px 0px 10px 0;
     margin: 20px 0 0 0;
   }
   #main_intro {
-    left: 42%;
-    top: 350px;
+    padding: 20px;
+    left: 45%;
+    top: 330px;
     z-index: 41;
   }
 
   #blurb {
     text-align: left;
-    height: 100%;
-    display: inline-block;
     top: 0; left: 0;
-    margin: 0;
-    width: 35%;
+    margin: 0 0 0 25px;
+    width: 40%;
     z-index: 42;
-    padding: 10px 20px;
+    padding: 20px;
     font-size: calc(14.5px + 8 * ((100vw - 600px)/1000));
   }
   }
