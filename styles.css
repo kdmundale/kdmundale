@@ -209,6 +209,8 @@ ul {
   font-size: calc(16px + 20 * ((100vw - 300px)/1300));
   font-family: 'Roboto', sans-serif;
   color: rgb(125,240,251);
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .proj {
@@ -241,7 +243,7 @@ td {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: 800px;
 }
 
 .icon_box {
@@ -346,7 +348,7 @@ td {
 
   .main_intro_div {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 220px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
