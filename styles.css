@@ -129,7 +129,7 @@ ul {
   text-shadow: rgb(25,25,25) 3px 0 10px;
   background-color: rgba(35,35,35,.8);
   font-size: calc(23px + 15 * ((100vw - 300px)/1300));
-  width: 100%;
+  width: 99%;
   color: rgb(165, 156, 255);
   margin: 20px 20px 40px 20px;
   z-index: 10;
@@ -143,7 +143,7 @@ ul {
 }
 
 #main_intro {
-  background-color: rgba(25,25,25,.6);
+  background-color: rgba(25,25,25,.7);
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-style: italic;
@@ -244,12 +244,33 @@ td {
 }
 
 .proj_pic_cont {
+  margin-right: 10px;
+  box-shadow: 0px 0px 10px 5px  rgb(125,240,251);
   width: 25%;
 }
 
 .proj_pic_cont:hover {
   background: linear-gradient(rgb(194,194,194),rgb(85,85,85));
-  box-shadow: 0px 0px 7px 3px  rgb(165, 156, 255);
+  box-shadow: 0px 0px 10px 5px  rgb(165, 156, 255);
+  padding: 10px;
+}
+
+.proj_name {
+  box-shadow: 4px 5px 3px 0px  rgb(15, 15, 15);
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  padding: 5px 5px 5px 5px;
+  width: 45%;
+}
+
+.proj_skill {
+  font-size: calc(12px + 15 * ((100vw - 300px)/1300));
+  box-shadow: 4px 5px 3px 2px  rgb(15, 15, 15);
+  text-align: center;
+  border: none;
+  border-radius: 0;
+  padding: 10px 5px 5px 10px;
 }
 
 #resume {
@@ -406,19 +427,20 @@ footer {
   }
   #main_intro {
     padding: 20px;
-    left: 45%;
+    left: 50%;
     top: 330px;
+    font-size: calc(16px + 20 * ((100vw - 600px)/1000));
     z-index: 41;
   }
 
   #blurb {
     text-align: left;
-    top: 0; left: 0;
+    top: 0; right:0;
     margin: 0 0 0 25px;
-    width: 40%;
+    width: 45%;
     z-index: 42;
     padding: 20px;
-    font-size: calc(14.5px + 8 * ((100vw - 600px)/1000));
+    font-size: calc(14px + 8 * ((100vw - 600px)/1000));
   }
   }
 /*--- phone landscape---*/
