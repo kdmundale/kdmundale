@@ -1,5 +1,15 @@
-* {
+
+/**
+ General starting styles
+ */
+
+html {
   box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -11,6 +21,10 @@ body {
   width:100vw;
 }
 
+
+/**
+Header related
+*/
 .header-holder {
   position: fixed;
   top: 0; left:0;
@@ -93,6 +107,11 @@ ul {
 }
 
 .show {display:block;}
+
+
+/**
+Main Layout styles
+*/
 
 .main_intro {
   display: flex;
@@ -194,7 +213,7 @@ ul {
   align-items: center;
 }
 
-.skill_h1 {
+.skill_h2 {
   text-align: left;
   font-size: calc(25px + 50 * ((100vw - 300px)/1300));
   font-family: 'Montserrat', sans-serif;
@@ -348,6 +367,7 @@ footer {
     margin-top: 100;
   }
 }
+
 /*---tablet portrait---*/
 
 @media only screen
