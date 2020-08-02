@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <script defer type="text/javascript" src="script.js"></script>
@@ -10,48 +12,74 @@
     rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css">
     <title>KDMundale</title>
+
   </head>
+
   <body>
+
     <div class="header-holder">
+
     <header>
+
       <div class="title-bar">
-      <button onclick="myFunction()" type="button" class="dropbtn" name="button"></button>
+      <!--Drop down header button which activates JavaScript-->
+      <button onclick="dropDownOption()" type="button" class="dropbtn" name="button"></button>
+
         <div id="dropMenu" class="title-bar-nav">
+
           <a class="nav-bar" href="#skills">strengths</a>
           <a class="nav-bar" href="#projects">projects</a>
           <a class="nav-bar" href="#resume">experience</a>
           <a class="nav-bar" href="#contact">contact</a>
           <a class="nav-bar" href="#home">home</a>
+
         </div>
+
       </div>
+
     </header>
+
     </div>
+
   <article id="home" class="intro">
+
   <h1 id="main_name">KD Mundale</h1>
-  <h1 id="special">Bringing My Unique Perspective to Web/App Design &
-    Development</h1>
+
+  <h2 id="special">Bringing My Unique Perspective to Web/App Design &
+    Development</h2>
+
     <div class="main_intro_div">
+
     <img id="me" src="images/me2.jpg" alt="portrait of Katherine Mundale on a wooded bike trail
     standing beside her bike and giving the 'hang-loose' hand signal">
-    <p id="main_intro"> If everyone took<br><br>the same trail,<br><br>we'd only
-      see<br><br>the world from<br><br>one point of view</p>
-    <p id="blurb">I haven't followed the conventional path to the
-      world of web, app, and software development.<br>
-      The first half of my life was spent working doubles behind a bar and raising
-      my sons as a single mother.<br>In 2019 I decided it was time for a change, and
-      I enrolled in the Computer Software Engineering program at <a href="#" class="link">
-      Thaddeus Stevens College of Technology</a>.<br>The fire was lit, and my desire
-      to create, learn, and understand programming and design has been burning ever since!<br>
-      <br><br>My expiereince gives me a unique advantage-<br>
-      I have learned the best ideas can come from the most unexpected
-      places.<br>Diversity and adverisity are provenance for new perspectives
-      and creative soulutions.</p>
-    </div>
-  </article>
-  <article class="main">
-    <section id="skills" class="main_content">
-      <h1 class="skill_h1">strengths</h1>
 
+
+    <p id="main_intro"> If everyone took the same trail,we'd only
+      see the world from one point of view.</p>
+
+    <p id="blurb">I haven't followed the conventional path to the
+      world of web, app, and software development.
+      The first half of my life was spent working doubles behind a bar and raising
+      my sons as a single mother. In <time>2019</time> I decided it was time for a change, and
+      I enrolled in the Computer Software Engineering program at <a href="#" class="link">
+      Thaddeus Stevens College of Technology</a>.The fire was lit, and my desire
+      to create, learn, and understand programming and design has been burning ever since!
+      My experience gives me a unique advantage.
+      I have learned the best ideas can come from the most unexpected
+      places. Diversity and adversity are provenances for new perspectives
+      and creative solutions.</p>
+
+    </div>
+
+  </article>
+
+  <article class="main">
+
+    <section id="skills" class="main_content">
+
+      <h2 class="skill_h2">strengths</h2>
+      <!-- TODO: Make paragraphs below each h2 giving more
+      clarification behind the skills (Thats what I assume you wan to do Kate :) )-->
       <h2 class="skill_h">I listen.</h2>
       <p class="skills_p"></p>
       <h2 class="skill_h">I ask.</h2>
@@ -64,61 +92,77 @@
       <p class="skills_p"></p>
 
     </section>
+
     <section id="projects" class="main_content">
-      <h1 class="skill_h1">projects</h1>
+
+      <h2 class="skill_h2">Projects</h2>
 
       <table>
+        <!--Table of previous projects with displayed skills used-->
         <tbody>
 
           <tr>
-            <td class="proj_pic_cont"><a target="blank" href="https://kdmundale.github.io/DowntownLancaster-DrivingGame/"><img src="images/driver.jpg" alt="" class="proj"></a></td>
-            <td class="proj_name">WANNA PLAY A GAME?<br>Downtown Lancaster:<br>JavaScript Driving Game</td>
-            <td class="proj_skill">JavaScript, HTML & CSS<br>Mobile compatible</td>
+            <td class="proj_pic_cont"><a target="blank" href="https://kdmundale.github.io/DowntownLancaster-DrivingGame/"><img src="images/project-images/driver.jpg" alt="" class="proj"></a></td>
+            <td class="proj_name">WANNA PLAY A GAME? Downtown Lancaster: JavaScript Driving Game</td>
+            <td class="proj_skill">JavaScript, HTML & CSS Mobile compatible</td>
           </tr>
+
           <tr>
             <td class="proj_pic_cont"><a href="#"><img src="images/portal.jpg" alt="" class="proj"></a></td>
-            <td class="proj_name">TSCT Portal:<br>Simulation College Portal using Flask</td>
+            <td class="proj_name">TSCT Portal: Simulation of the College Portal using Flask.</td>
             <td class="proj_skill">Python3, Flask, SQL, PgAdmin, Database Design, JavaScript, HTML, CSS</td>
           </tr>
+
           <tr>
-            <td class="proj_pic_cont"><a target="blank" href="https://stormy-cove-03010.herokuapp.com/"><img src="images/todo.jpg" alt="" class="proj"></a></td>
+            <td class="proj_pic_cont"><a target="blank" href="https://stormy-cove-03010.herokuapp.com/"><img src="images/project-images/todo.jpg" alt="" class="proj"></a></td>
             <td class="proj_name">Flask ToDo App</td>
             <td class="proj_skill">Python3, Flask, HTML, CSS, Heroku</td>
           </tr>
+
           <tr>
-            <td class="proj_pic_cont"><a href=" https://kdmundale.github.io/MollysPubWebsite/" target="blank"><img src="images/logo.png" class="proj" alt=""></a></td>
+            <td class="proj_pic_cont"><a href=" https://kdmundale.github.io/MollysPubWebsite/" target="blank"><img src="images/project-images/logo.png" class="proj" alt=""></a></td>
             <td class="proj_name">Website Proposal: Static Web Build for Business</td>
             <td class="proj_skill">JavaScript, HTML, CSS</td>
           </tr>
+
           <tr>
-            <td class="proj_pic_cont"><a target="blank" href="https://github.com/kdmundale"><img  class="proj" src="images/github.svg" alt="GitHub Icon"></a></td>
+            <td class="proj_pic_cont"><a target="blank" href="https://github.com/kdmundale"><img  class="proj" src="images/social-images/github.svg" alt="GitHub Icon"></a></td>
             <td class="proj_name">GitHub</td>
             <td class="proj_skill">Collection of all my school and personal projects, from my first "Hello, World" to now.</td>
           </tr>
+
         </tbody>
+
       </table>
+
     </section>
+
     <section id="resume" class="main_content">
-      <h1 class="skill_h1">expierience</h1>
+      <h2 class="skill_h2">Experience</h2>
       <div class="resume_window">
       <iframe src="docs/RESUME.pdf" width="90%" height="700px"></iframe>
       </div>
     </section>
+
     <section id="contact" class="main_content">
-      <h1 class="skill_h1">contact</h1>
+
+      <h2 class="skill_h2">Contact</h2>
       <p class="skills_p">Currently I am located in Lancaster, PA. Feel free to send me an email or reach out via social media!</p>
       <div class="icon_box">
-      <a class="icon_link" target="blank" href="https://www.facebook.com/katherine.d.mundale"><img class="icon" src="images/facebook.png" alt="Facebook Icon"></a>
-      <a class="icon_link" target="blank" href="https://www.instagram.com/katherine.doris/"><img class="icon" src="images/insta.png" alt="Instagram Icon"></a>
-      <a class="icon_link" target="blank" href="https://www.linkedin.com/in/katherine-mundale-4295751b2/"><img class="icon" src="images/linkedin.png" alt="LinkedIn Icon"></a>
-      <a class="icon_link" target="blank" href="mailto:katherine.doris.mundale@gmail.com"><img class="icon" src="images/email.png" alt="Email Icon"></a>
+      <a class="icon_link" target="blank" href="https://www.facebook.com/katherine.d.mundale"><img class="icon" src="images/social-images/facebook.png" alt="Facebook Icon"></a>
+      <a class="icon_link" target="blank" href="https://www.instagram.com/katherine.doris/"><img class="icon" src="images/social-images/insta.png" alt="Instagram Icon"></a>
+      <a class="icon_link" target="blank" href="https://www.linkedin.com/in/katherine-mundale-4295751b2/"><img class="icon" src="images/social-images/linkedin.png" alt="LinkedIn Icon"></a>
+      <a class="icon_link" target="blank" href="mailto:katherine.doris.mundale@gmail.com"><img class="icon" src="images/social-images/email.png" alt="Email Icon"></a>
 
       </div>
     </section>
 
   </article>
+
   <footer>
-    <p class="footer_p">Copywright July 2020 KDM</p>
+
+    <p class="footer_p">Copyright <time>July 2020</time> KDM</p>
+
   </footer>
 
   </body>
