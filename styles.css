@@ -226,7 +226,7 @@ Main Layout styles
   text-align: left;
   color: rgb(125,240,251);
   font-family: 'Montserrat', sans-serif;
-  font-size: calc(35px + 30 * ((100vw - 300px)/1300));
+  font-size: calc(35px + 50 * ((100vw - 300px)/1300));
   text-shadow: rgb(0,0,0) 0px 0px 10px;
   text-shadow: rgb(125,240,251) 0px 0px 15px;
   text-shadow: rgb(97,194,233) 0px 0px 20px;
@@ -242,12 +242,12 @@ Main Layout styles
 }
 
 .skills_p {
-  font-size: calc(14px + 2 * ((100vw - 600px)/1000));
+  font-size: calc(14px + 5 * ((100vw - 600px)/1000));
   text-align: center;
   text-align: left;
   font-family: 'Roboto', sans-serif;
   color: rgb(125,240,251);
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .proj {
@@ -354,7 +354,7 @@ footer {
 @media only screen and (min-width: 400px){
 
   #special {
-    top:500px;
+    top:550px;
   }
 
   #main_intro {
