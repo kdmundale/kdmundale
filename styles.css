@@ -207,19 +207,28 @@ ul {
   text-align: left;
   color: rgb(125,240,251);
   font-family: 'Montserrat', sans-serif;
-  font-size: calc(30px + 30 * ((100vw - 300px)/1300));
+  font-size: calc(35px + 30 * ((100vw - 300px)/1300));
   text-shadow: rgb(0,0,0) 0px 0px 10px;
   text-shadow: rgb(125,240,251) 0px 0px 15px;
   text-shadow: rgb(97,194,233) 0px 0px 20px;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.skills_p_container {
+  width: 75%;
+  padding: 10px;
+  margin: 0;
+  box-shadow: 0px 0px 7px 3px  rgb(165, 156, 255);
 }
 
 .skills_p {
+  font-size: calc(14px + 2 * ((100vw - 600px)/1000));
+  text-align: center;
   text-align: left;
-  font-size: calc(16px + 20 * ((100vw - 300px)/1300));
   font-family: 'Roboto', sans-serif;
   color: rgb(125,240,251);
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 10px;
 }
 
 .proj {
@@ -460,6 +469,14 @@ footer {
   }
 }
 /*---- laptops-----*/
+
+@media screen and (min-width: 1000px){
+
+  #special {
+    top: 225px;
+    z-index: 50;
+  }
+}
 
 /*--- non retina screens---*/
 @media screen
