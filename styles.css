@@ -317,11 +317,12 @@ td {
   font-variant: small-caps;
   text-align: center;
   color: rgb(125,240,251);
+  margin-top: 50px;
 }
 
 .carousel-wrapper {
   overflow: hidden;
-  width: 90%;
+  width: 95%;
 }
 
 .carousel-wrapper * {
@@ -366,14 +367,15 @@ td {
 .carousel__button--next {
   position: absolute;
   top:50%;
+  margin: 7px;
   width: 3rem;
   height: 3rem;
-  background-color: #FFF;
+  background-color: rgb(68,128,223);
+  box-shadow: 0 0 5px 3px rgb(125,240,251);
   transform: translateY(-50%);
   border-radius: 50%;
   cursor: pointer;
   z-index: 1001; /* Sit on top of everything */
-  border: 1px solid black;
 }
 .carousel__button--prev {
   left:0;
