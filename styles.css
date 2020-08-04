@@ -19,7 +19,6 @@ body {
   background: radial-gradient(circle at 90%, #232323, #14213d 40%, #0c284d 50%, #232323 95%);
   display: flex;
   flex-direction: column;
-  width:100vw;
 }
 
 
@@ -30,13 +29,12 @@ Header related
   position: fixed;
   top: 0; left:0;
   display: block;
-  width: 99%;
   height: 80px;
   z-index: 50;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   display: block;
   height: 80px;
   background: linear-gradient(rgb(85,106,147), rgb(35,35,35));
@@ -92,7 +90,7 @@ ul {
 
 .dropbtn {
   position: absolute;
-  top: -7px; right: 20px;
+  top: -7px; right: 30px;
   color: rgb(194,194,194);
   font-family: 'Roboto', sans-serif;
   font-variant: small-caps;
@@ -117,12 +115,15 @@ Main Layout styles
 .main_intro {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
   margin: 0;
+
 }
 
 #main_name {
@@ -151,14 +152,14 @@ Main Layout styles
   font-size: calc(23px + 15 * ((100vw - 300px)/1300));
   width: 99%;
   color: rgb(165, 156, 255);
-  margin: 20px 20px 40px 20px;
+  margin: 20px 0px 40px 0px;
   z-index: 10;
-  padding: 20px 0 0 0;
+  padding: 20px;
 }
 
 #me {
   position: relative;
-  right: -25%;
+  right: -10%;
   width: 75%;
 }
 
@@ -179,13 +180,21 @@ Main Layout styles
   text-shadow: rgb(97,194,233) 0px 0px 20px;
 }
 
+.main_intro_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #blurb {
   color:white;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  margin: 170px 25px 35px 10px;
-  box-shadow: 0px 0px 7px 3px  rgb(125,240,251);
+  width: 80%;
+  margin-top: 200px;
   padding: 20px 10px;
+  box-shadow: 0px 0px 7px 3px  rgb(125,240,251);
   z-index: 11;
 }
 
@@ -383,44 +392,6 @@ footer {
 @media only screen
   and (min-width: 600px) {
 
-  .dropbtn {
-    display: none;
-  }
-
-  .title-bar-nav {
-    position: relative;
-    left: 0;
-    top: -10px;
-    background-color: rgba(68,128,223,0);
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-left: 10px;
-  }
-
-  .title-bar-nav a {
-    color: white;
-    text-shadow: rgb(25,25,25) 3px 0 10px;
-    padding: 15px 25px;
-  }
-
-  .title-bar-nav a:hover{
-    background: linear-gradient(rgb(85,85,85),rgb(194,194,194));
-    color: black;
-  }
-
-  .nav-bar {
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-variant: small-caps;
-    font-size: 20px;
-    box-shadow: 0px 0px 7px 3px  rgb(125,240,251);
-    background: linear-gradient(rgb(85,85,85),rgb(16,45,91));
-  }
-
   .intro {
     display: flex;
     flex-direction: column;
@@ -492,6 +463,44 @@ footer {
 /*---- laptops-----*/
 
 @media screen and (min-width: 1000px){
+
+  .dropbtn {
+    display: none;
+  }
+
+  .title-bar-nav {
+    position: relative;
+    left: 0;
+    top: -10px;
+    background-color: rgba(68,128,223,0);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  .title-bar-nav a {
+    color: white;
+    text-shadow: rgb(25,25,25) 3px 0 10px;
+    padding: 15px 25px;
+  }
+
+  .title-bar-nav a:hover{
+    background: linear-gradient(rgb(85,85,85),rgb(194,194,194));
+    color: black;
+  }
+
+  .nav-bar {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    font-size: 20px;
+    box-shadow: 0px 0px 7px 3px  rgb(125,240,251);
+    background: linear-gradient(rgb(85,85,85),rgb(16,45,91));
+  }
 
   #special {
     top: 225px;
