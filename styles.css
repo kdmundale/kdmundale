@@ -146,7 +146,7 @@ Main Layout styles
 #special {
   position: relative;
   font-family: 'Roboto', sans-serif;
-  top:480px; left: 0;
+  top:500px; left: 0;
   text-shadow: rgb(25,25,25) 3px 0 10px;
   background-color: rgba(35,35,35,.8);
   font-size: calc(23px + 15 * ((100vw - 300px)/1300));
@@ -356,8 +356,11 @@ footer {
 }
 
 
-@media only screen and (min-width: 375px){
+@media only screen and (min-width: 370px){
 
+  #special {
+    top: 520px;
+  }
 
 }
 
