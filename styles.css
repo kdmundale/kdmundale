@@ -311,6 +311,93 @@ td {
   padding: 10px 5px 5px 10px;
 }
 
+.visual_h3 {
+  font-size: calc(18px + 25 * ((100vw - 300px)/1300));
+  font-family: 'Roboto', sans-serif;
+  font-variant: small-caps;
+  text-align: center;
+  color: rgb(125,240,251);
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 90%;
+}
+
+.carousel-wrapper * {
+  box-sizing: border-box;
+}
+
+.carousel {
+  transform-style: preserve-3d;
+}
+
+.carousel__photo {
+  opacity: 0;
+  position: absolute;
+  top:0;
+  width:100%;
+  height:auto;
+  margin: auto;
+  padding: 1rem 4rem;
+  z-index: 100;
+  transition: transform .5s, opacity .5s, z-index .5s;
+}
+
+.carousel__photo.initial,
+.carousel__photo.active {
+  opacity: 1;
+  position: relative;
+  z-index: 900;
+}
+
+.carousel__photo.prev,
+.carousel__photo.next {
+  z-index: 800;
+}
+.carousel__photo.prev {
+  transform: translateX(-100%); /* Move 'prev' item to the left */
+}
+.carousel__photo.next {
+  transform: translateX(100%); /* Move 'next' item to the right */
+}
+
+.carousel__button--prev,
+.carousel__button--next {
+  position: absolute;
+  top:50%;
+  width: 3rem;
+  height: 3rem;
+  background-color: #FFF;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1001; /* Sit on top of everything */
+  border: 1px solid black;
+}
+.carousel__button--prev {
+  left:0;
+}
+.carousel__button--next {
+  right:0;
+}
+.carousel__button--prev::after,
+.carousel__button--next::after {
+  content: " ";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 54%;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+.carousel__button--next::after {
+  left: 47%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 #resume {
 
 }
@@ -424,10 +511,9 @@ footer {
 
   #special {
     display: block;
-    top: 200px; left: 20px;
+    top: 200px; left: 0px;
     width: 100%;
-    padding: 0px 0px 10px 0;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
   }
   #main_intro {
     padding: 20px;
