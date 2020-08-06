@@ -323,6 +323,8 @@ td {
 .carousel-wrapper, .carousel-wrapper2 {
   overflow: hidden;
   width: 95%;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .carousel-wrapper * {
@@ -361,7 +363,7 @@ td {
 .carousel__photo.prev,
 .carousel__photo.next,
 .carousel__photo2.prev,
-.carousel__photo2.prev {
+.carousel__photo2.next {
   z-index: 800;
 }
 .carousel__photo.prev,
@@ -405,8 +407,8 @@ td {
   height: 10px;
   top: 50%;
   left: 54%;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
+  border-right: 2px solid rgb(125,240,251);
+  border-bottom: 2px solid rgb(125,240,251);
   transform: translate(-50%, -50%) rotate(135deg);
 }
 .carousel__button--next::after,
@@ -494,6 +496,13 @@ footer {
   }
 }
 
+@media only screen and (min-width: 550px){
+
+  .carousel-wrapper, .carousel-wrapper2 {
+    overflow: hidden;
+    width: 540px;
+  }
+}
 /*---tablet portrait---*/
 
 @media only screen

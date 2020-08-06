@@ -2,7 +2,6 @@
 When the user clicks on the button,
 toggle between hiding and showing the dropdown content
  */
-
 let dropDownOption = () => {
   document.getElementById("dropMenu").classList.toggle("show");
 }
@@ -22,7 +21,7 @@ window.onclick = function(event) {
 }
 
 !(function(d){
-  // All code will go in here. We've renamed 'document' to 'd'.
+
   const itemClassName = "carousel__photo";
     items = d.getElementsByClassName(itemClassName),
     totalItems = items.length,
@@ -32,7 +31,7 @@ window.onclick = function(event) {
   const itemClassName2 = "carousel__photo2";
     items2 = d.getElementsByClassName(itemClassName2),
     totalItems2 = items2.length,
-    slide2 = 0,
+    slide2 = 0;
     moving = true;
 
     // Set classes
@@ -58,10 +57,10 @@ window.onclick = function(event) {
   }
 
   function setEventListeners2() {
-    let next = d.getElementsByClassName('carousel__button2--next')[0],
-        prev = d.getElementsByClassName('carousel__button2--prev')[0];
-    next.addEventListener('click', moveNext2);
-    prev.addEventListener('click', movePrev);
+    let next2 = d.getElementsByClassName('carousel__button2--next')[0],
+        prev2 = d.getElementsByClassName('carousel__button2--prev')[0];
+    next2.addEventListener('click', moveNext2);
+    prev2.addEventListener('click', movePrev2);
   }
 
   // Next navigation handler
@@ -187,7 +186,7 @@ window.onclick = function(event) {
           oldNext2 = 0;
         }
         // Checks and updates if slide is at the beginning/end
-        if (slide === 0) {
+        if (slide2 === 0) {
           newPrevious2 = (totalItems2 - 1);
           oldPrevious2 = (totalItems2 - 2);
           oldNext2 = (slide2 + 1);
