@@ -4,9 +4,7 @@ Kate Mundale!
 
 ## Usage 
 
-Currently this project is underconstruction, but 
-is planned to be used for my portfolio in the near
-future.
+I'm making a big switch from years of bartending to learning this 0s and 1s stuff... my github is a little sandbox for things ive been playing around with. always welcome to input!
 
 ## Contributions 
 
