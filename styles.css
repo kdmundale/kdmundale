@@ -1243,7 +1243,7 @@ span {
     color: white;
   }
 
-  #float-box, #float-box1, #float-box6, #float-box7,#float-boxa,#float-boxb{
+  #float-box, #float-box1, #float-box6, #float-box7,#float-boxa,#float-boxb,#float-box17,#float-box18{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1273,9 +1273,18 @@ span {
   #float-boxb{
     top:1100px; left:72%;
   }
+  #float-box17{
+    position: relative;
+    top:1900px; left:13%;
+  }
+  #float-box18{
+    position: relative;
+    top:2100px; left:60%;
+  }
 
 
-  #float-box2, #float-box3,#float-box8, #float-box9,#float-boxc,#float-boxd{
+  #float-box2, #float-box3,#float-box8, #float-box9,#float-boxc,#float-boxd,
+  #float-box13, #float-box14{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1306,7 +1315,16 @@ span {
     top:1100px; left:72%;
   }
 
-  #float-box4, #float-box5,#float-box10, #float-box11,#float-boxe,#float-boxf{
+  #float-box13{
+    position: relative;
+    top:2525px; left:10%;
+  }
+  #float-box14{
+    position: relative;
+    top:2400px; left:85%;
+  }
+
+  #float-box4, #float-box5,#float-box10, #float-box11,#float-boxe,#float-boxf,#float-box15,#float-box16{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1342,6 +1360,14 @@ span {
   #float-boxf{
     top:4000px; left:10%;
     position: absolute;
+  }
+  #float-box15{
+    position: relative;
+    top:2225px; left:20%;
+  }
+  #float-box16{
+    position: relative;
+    top:2000px; left:75%;
   }
 
   .skill_h2, .skill_h3 {
