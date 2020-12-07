@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script defer type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap&Montserrat:wght@500&display=swap"
+    rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>KDMundale</title>
+
+  </head>
+
+  <body>
+    <div class="star-container2">
+    <div id="star_a" class="star-1"></div>
+    <div id="star_b" class="star-1"></div>
+    <div id="star_c" class="star-1"></div>
+    <div id="star_d" class="star-1"></div>
+    <div id="star_e" class="star-1"></div>
+    <div id="star_f" class="star-1"></div>
+    <div id="star_g" class="star-1"></div>
+    <div id="star_h" class="star-1"></div>
+    <div id="star_i" class="star-2"></div>
+    <div id="star_j" class="star-2"></div>
+    <div id="star_k" class="star-2"></div>
+    <div id="star_l" class="star-2"></div>
+    <div id="star_m" class="star-2"></div>
+    <div id="star_n" class="star-2"></div>
+    <div id="star_o" class="star-2"></div>
+    <div id="star_p" class="star-2"></div>
+    <div id="star_q" class="star-2"></div>
+    <div id="star_r" class="star-3"></div>
+    <div id="star_s" class="star-3"></div>
+    <div id="star_t" class="star-3"></div>
+    <div id="star_u" class="star-3"></div>
+    <div id="star_v" class="star-3"></div>
+    <div id="star_w" class="star-3"></div>
+    <div id="star_x" class="star-3"></div>
+    <div id="star_y" class="star-3"></div>
+    <div id="star_z" class="star-3"></div>
+
+    <header>
+
+      <h1 id="main_name">KD Mundale</h1>
+
+    </header>
+    <article class="main">
+
+      <section id="skills" class="main_content">
+
+        <h2 id="stren" class="skill_h2">strengths</h2>
+
+        <h2 id="work" class="skill_h">I work.</h2>
+        <div id="work-box" class="skills_p_container">
+          <p class="skills_p" class="skills_p">A strong work ethic has carried me
+          through life. The NMW Club: No matter what, show up and do the best you can.</p>
+        </div>
+
+        <h2 id="listen" class="skill_h">I listen.</h2>
+          <div id="listen-box" class="skills_p_container">
+            <p class="skills_p" class="skills_p">Patient, attentive listening
+            reveals what is needed to resolve a situation. Remaining open and engaged in every discussion not only reinforces
+            confidence between collaborators and clients, but saves time and
+            resources as well.</p>
+          </div>
+
+        <h2 id="com" class="skill_h">I communicate.</h2>
+          <div id="com-box" class="skills_p_container">
+            <p class="skills_p">Coinciding with effective
+              listening: clear and cogent communication. Be it written or verbal,
+              formal or informal, external or internal, conveying ideas and issues
+              thoroughly and professionally effects relationships and
+              ptoductivity in a beneficial way.</p>
+          </div>
+
+        <h2 id="sol" class="skill_h">I find solutions.</h2>
+          <div id="sol-box" class="skills_p_container">
+            <p class="skills_p" class="skills_p">....even if they're not my own.
+              <br>As a creative thinker and someone who approcahes problems from new
+              directions, sometimes the tried and true solution is still the best.
+              Reaserch, experimentation, peer review, testing; finding the most effective
+              solution is always a priority.
+            </p>
+          </div>
+
+        <h2 id="care" class="skill_h">I genuinely care.</h2>
+          <div id="care-box" class="skills_p_container">
+            <p class="skills_p" class="skills_p">About everything. About everybody.<br>In a world with a devisive climate full of polarizing issues, my
+            personal ethos is one of equality, inclusion, and openness.</p>
+          </div>
+
+
+      </section>
+
+      <section>
+        <a id="link-4" class="link-1" href="./index.html">home</a>
+        <a id="link-5" class="link-2" href="./projects.html">projects</a>
+        <a id="link-6" class="link-3" href="./index.html#contact">contact</a>
+      </section>
+
+      </article>
+        <footer>
+
+          <p class="footer_p">Copyright <time>July 2020</time> KDM</p>
+
+        </footer>
+      </div>
+      <script>
+
+      $(document).ready(function() {
+        /* Every time the window is scrolled ... */
+        $(window).scroll( function(){
+          /* Check the location of each desired element */
+          $('.skills_p_container').each( function(i){
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+          });
+        });
+      });
+
+      function move() {
+        let value = window.scrollY;
+        let main = document.getElementById("main_name");
+        main.style.top =-value * .002 + 'px';
+      }
+
+      window.addEventListener('scroll', move);
+
+
+
+      </script>
+      </body>
+      </html>
