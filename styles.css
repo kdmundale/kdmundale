@@ -899,6 +899,7 @@ span {
 }
 
 #contact {
+  z-index: 30;
   display:block;
   width:30%;
   text-align: left;
@@ -908,11 +909,13 @@ span {
 }
 
 .icon_box {
+  position:relative;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  z-index:30;
 
 }
 .icon {
@@ -1094,6 +1097,7 @@ span {
     padding:300px 0 0 0;
     position: relative;
     bottom: 0px;left:0%;
+    z-index:30;
   }
 
   #projects {
@@ -1516,6 +1520,7 @@ span {
     padding:300px 0 0 0;
     position: absolute;
     bottom: 1100px;left:15%;
+    z-index: 30;
   }
 
   .footer_p {
