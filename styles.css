@@ -1262,10 +1262,10 @@ span {
     top:1300px; left:60%;
   }
   #float-box6{
-    top:3700px; left:5%;
+    top:4400px; left:5%;
   }
   #float-box7{
-    top:4100px; left:60%;
+    top:4700px; left:60%;
   }
   #float-boxa{
     top:1700px; left:25%;
@@ -1294,10 +1294,10 @@ span {
     top:1600px; left:45%;
   }
   #float-box8{
-    top:3800px; left:10%;
+    top:4525px; left:10%;
   }
   #float-box9{
-    top:3900px; left:85%;
+    top:4400px; left:85%;
   }
   #float-boxc{
     top:1700px; left:33%;
@@ -1327,11 +1327,12 @@ span {
     position: absolute;
   }
   #float-box10{
-    top:3750px; left:80%;
+    top:4450px; left:70%;
     position: absolute;
+
   }
   #float-box11{
-    top:4000px; left:15%;
+    top:4600px; left:15%;
     position: absolute;
   }
   #float-boxe{
