@@ -43,6 +43,14 @@ body {
   box-shadow: 0px 0px 5px 2px white;
   border-radius: 50% 50%;
 }
+.star-4 {
+  position: fixed;
+  width:4px;
+  height:4px;
+  background-color: white;
+  box-shadow: 15px -15px 15px white;
+  border-radius: 100% 20%;
+}
 
  #star_a{
    -webkit-animation: twinkle .5s alternate infinite;
@@ -224,12 +232,64 @@ body {
   top:33%; left:50%;
 }
 
+#star_shoot_a {
+  -webkit-animation: shoot 1s linear;
+       -moz-animation: shoot 1s linear;
+         -o-animation: shoot 1s linear;
+            animation: shoot 1s linear;
+  top:2%; right: 5%;
+  animation-delay: 10s;
+}
+
+#star_shoot_b {
+  -webkit-animation: shoot 1s linear;
+       -moz-animation: shoot 1s linear;
+         -o-animation: shoot 1s linear;
+            animation: shoot 1s linear;
+  top:20%; right: 5%;
+  animation-delay: 25s;
+}
+
+#star_shoot_c {
+  -webkit-animation: shoot 1s linear;
+       -moz-animation: shoot 1s linear;
+         -o-animation: shoot 1s linear;
+            animation: shoot 1s linear;
+  top:0%; right: 5%;
+  animation-delay: 35s;
+}
+
 @keyframes twinkle {
   0% {
     opacity: .4;
   }
   100%{
     opacity: 1;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 0;
+  }
+  10% {
+    transform: translate3d(0px, 0px, 0px);
+    opacity: .4;
+  }
+  25%{
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: .8;
+  }
+  100% {
+    transform: translate3d(-800px, 700px, 0px);
+    animation-timing-function: ease-out;
+    opacity: .2;
   }
 }
 
@@ -1019,7 +1079,6 @@ span {
     position: relative;
     left:-20%;
     top: 70px;
-    z-index: 29;
   }
 
   .link-box {
