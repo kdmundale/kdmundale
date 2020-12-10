@@ -246,7 +246,7 @@ body {
        -moz-animation: shoot 1s linear;
          -o-animation: shoot 1s linear;
             animation: shoot 1s linear;
-  top:20%; right: 5%;
+  top:10%; right: 10%;
   animation-delay: 25s;
 }
 
@@ -255,8 +255,32 @@ body {
        -moz-animation: shoot 1s linear;
          -o-animation: shoot 1s linear;
             animation: shoot 1s linear;
-  top:0%; right: 5%;
+  top:0%; right: 20%;
   animation-delay: 35s;
+}
+#star_shoot_d {
+  -webkit-animation: shoot 1s linear;
+       -moz-animation: shoot 1s linear;
+         -o-animation: shoot 1s linear;
+            animation: shoot 1s linear;
+  top:25%; right: 5%;
+  animation-delay: 45s;
+}
+#star_shoot_e {
+  -webkit-animation: shoot 1s linear;
+       -moz-animation: shoot 1s linear;
+         -o-animation: shoot 1s linear;
+            animation: shoot 1s linear;
+  top:10%; right: 5%;
+  animation-delay: 55s;
+}
+#star_shoot_f {
+  -webkit-animation: shoot 1s linear;
+       -moz-animation: shoot 1s linear;
+         -o-animation: shoot 1s linear;
+            animation: shoot 1s linear;
+  top:0%; right: 5%;
+  animation-delay: 65s;
 }
 
 @keyframes twinkle {
