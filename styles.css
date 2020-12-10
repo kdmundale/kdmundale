@@ -566,6 +566,8 @@ span {
 .link-1:hover{
   box-shadow: 0px 0px 14px 6px white;
   background: radial-gradient(#7df0fb,#349ea8,#25767d);
+  height: 160px;
+  width: 160px;
 }
 
 .link-2 {
@@ -588,6 +590,8 @@ span {
 .link-2:hover{
   box-shadow: 0px 0px 14px 6px white;
   background: radial-gradient(#a49cff,#5850ab,#433d80);
+  height: 210px;
+  width: 210px;
 }
 
 .link-3 {
@@ -610,6 +614,8 @@ span {
 .link-3:hover{
   box-shadow: 0px 0px 14px 6px white;
   background: radial-gradient(#2957b3,#15387d,#0f285c);
+  height:110px;
+  width:110px;
 }
 
 .skill_h2, .skill_h3 {
@@ -828,7 +834,9 @@ span {
 }
 
 .road:hover{
-  box-shadow: 0px 0px 10px 5px  rgb(165, 156, 255);
+  box-shadow: 0px 0px 15px 10px  rgb(165, 156, 255);
+  width:130px;
+  height:110px;
 }
 
 .proj_holder{
@@ -853,7 +861,8 @@ span {
 
 .proj:hover {
   background: linear-gradient(rgb(194,194,194),rgb(85,85,85));
-  box-shadow: 0px 0px 10px 5px  rgb(165, 156, 255);
+  box-shadow: 0px 0px 15px 10px  rgb(165, 156, 255);
+  width: 130px;
 }
 
 .proj_name {
@@ -1350,10 +1359,10 @@ span {
     top:1300px; left:60%;
   }
   #float-box6{
-    top:4400px; left:5%;
+    top:4700px; left:5%;
   }
   #float-box7{
-    top:4700px; left:60%;
+    top:4700px; left:70%;
   }
   #float-boxa{
     top:1700px; left:25%;
@@ -1394,7 +1403,7 @@ span {
     top:4525px; left:10%;
   }
   #float-box9{
-    top:4400px; left:85%;
+    top:4700px; left:85%;
   }
   #float-boxc{
     top:1700px; left:33%;
