@@ -618,6 +618,29 @@ span {
   width:110px;
 }
 
+.link-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  top:2050px; left:30%;
+  position: absolute;
+  height: 125px;
+  width:125px;
+  color: white;
+  box-shadow: 0px 0px 7px 3px #69beff;
+  background: radial-gradient(#0874c7,#3ba0ed,#69beff);
+  z-index: 19;
+}
+.link-4:hover{
+  box-shadow: 0px 0px 14px 6px white;
+  background: radial-gradient(#69beff,#3ba0ed,#0874c7);
+  height:135px;
+  width:135px;
+}
+
 .skill_h2, .skill_h3 {
   text-align: left;
   font-size: calc(25px + 50 * ((100vw - 300px)/1300));
@@ -1136,8 +1159,13 @@ span {
   }
 
   #link-3 {
-    top:50px; left:25%;
+    top:90px; left:55%;
     position: relative;
+  }
+
+  #link-20a{
+    position: relative;
+    top:-80px; left:15%;
   }
 
   #link-4 {
@@ -1205,6 +1233,39 @@ span {
     margin: 20px;
   }
 
+  #resume {
+    margin: 20px;
+  }
+
+  .resume-box{
+    width:90%;
+    height: 90vh;
+    margin: 0 auto;
+  }
+
+  #resume-holder {
+    margin: 0 auto;
+    width:100%;
+    height: 90vh;
+  }
+
+  #link-23 {
+    top:1300px; left:15%;
+    position: absolute;
+  }
+  #link-22 {
+    top:1500px; left:55%;
+    position: absolute;
+  }
+  #link-21 {
+    top:1450px; left:10%;
+    position: absolute;
+  }
+  #link-20 {
+    top:1325px; left:50%;
+    position: absolute;
+  }
+
 
 }
 
@@ -1217,14 +1278,18 @@ span {
     top:120px;
   }
   #link-7, #link-4, #link-1{
-    left:15%;
+    left:20%;
   }
   #link-8, #link-5, #link-2{
-    left:40%;
+    left:47%;
   }
   #link-9, #link-6, #link-3{
-    left:30%;
+    left:55%;
   }
+  #link-20a{
+    left:25%;
+  }
+
 
 }
 @media only screen and (min-width: 550px){
@@ -1338,6 +1403,28 @@ span {
 
   #link-3 {
     top:1500px; left:25%;
+    position: absolute;
+  }
+
+  #link-20a {
+    position: absolute;
+    top:1600px; left:45%;
+  }
+
+  #link-23 {
+    top:1300px; left:30%;
+    position: absolute;
+  }
+  #link-22 {
+    top:1250px; left:50%;
+    position: absolute;
+  }
+  #link-21 {
+    top:1450px; left:25%;
+    position: absolute;
+  }
+  #link-20 {
+    top:1400px; left:55%;
     position: absolute;
   }
 
