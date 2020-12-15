@@ -1348,7 +1348,8 @@ span {
     color: white;
   }
 
-  #float-box, #float-box1, #float-box6, #float-box7,#float-boxa,#float-boxb,#float-box17,#float-box18{
+  #float-box, #float-box1, #float-box6, #float-box7,#float-boxa,#float-boxb,
+  #float-box17,#float-box18, #float-boxfc{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1360,6 +1361,11 @@ span {
     background: radial-gradient(#4f4f4f,#787878);
     z-index: 15;
   }
+
+  #float-boxfc{
+    top:2000px; left: 35%;
+  }
+
   #float-box{
     top:1400px; left:5%;
   }
@@ -1429,7 +1435,8 @@ span {
     top:2400px; left:85%;
   }
 
-  #float-box4, #float-box5,#float-box10, #float-box11,#float-boxe,#float-boxf,#float-box15,#float-box16{
+  #float-box4, #float-box5,#float-box10, #float-box11,#float-boxe,#float-boxf,
+  #float-box15,#float-box16, #float-boxfa, #float-boxfb{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1441,7 +1448,16 @@ span {
     z-index: 15;
   }
 
-  #float-box4{
+#float-boxfa{
+ position: absolute;
+ top:1000px; left:60%
+  }
+#float-boxfb{
+  position: absolute;
+  top:1000px; left:35%
+}
+
+#float-box4{
     top:1450px; left:80%;
     position: absolute;
   }
