@@ -64,6 +64,40 @@
     <header>
 
       <h1 id="main_name">KD Mundale</h1>
+      <button onclick="dropDownOption();" id="pagelinks" type="button" name="button">quick links</button>
+        <div id="dropMenu" class="title-bar-nav">
+
+          <a class="nav-bar" href="./strengths.html">strengths</a>
+          <a class="nav-bar" href="./projects.html">projects</a>
+          <a class="nav-bar" href="./resume.html">resume</a>
+          <a class="nav-bar" href="./index.html#contact">contact</a>
+          <a class="nav-bar" href="./index.html">home</a>
+
+        </div>
+
+        <script type="text/javascript">
+
+            let dropDownOption = () => {
+              console.log("click")
+              document.getElementById("dropMenu").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches("#pagelinks")) {
+                let dropdowns = document.getElementsByClassName("title-bar-nav");
+                let i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  let openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains("show")) {
+                    openDropdown.classList.remove("show");
+                  }
+                }
+              }
+            }
+
+        </script>
+
 
     </header>
     <article class="main">
@@ -80,10 +114,12 @@
       </section>
 
       <section>
-        <a id="link-20" class="link-1" href="./index.html">home</a>
-        <a id="link-21" class="link-2" href="./strengths.html">strengths</a>
-        <a id="link-22" class="link-3" href="./index.html#contact">contact</a>
-        <a id="link-23" class="link-4" href="./projects.html">projects</a>
+        <h2 id="linknote">links</h2>
+
+        <a id="link-20" class="link-1" href="./index.html">return<br>main</a>
+        <a id="link-21" class="link-2" href="./strengths.html">view<br>strengths</a>
+        <a id="link-22" class="link-3" href="./index.html#contact">contact<br>links</a>
+        <a id="link-23" class="link-4" href="./projects.html">project<br>links</a>
 
         <div id="float-box20"> </div>
         <div id="float-box21"> </div>

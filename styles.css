@@ -363,21 +363,21 @@ ul {
 .title-bar-nav {
   display: none;
   position: absolute;
-  top:75px; right: 20px;
+  top:75px; right: 0px;
   font-size: 28px;
-  background-color: rgb(68,128,223);
-  min-width: 200px;
-  z-index: 60;
+  background-color: rgb(0,0,0,1);
+  min-width: 175px;
+  z-index: 100;
 }
 
 .title-bar-nav a {
-  box-shadow: 0px 0px 7px 3px  rgb(125,240,251);
   text-align: right;
+  font-size: 20px;
   font-family: 'Roboto', sans-serif;
   font-variant: small-caps;
   text-decoration: none;
   text-shadow: rgb(194,194,194) 3px 0 10px;
-  color: rgb(35,35,35);
+  color: rgb(165, 156, 255);
   padding: 12px 16px;
   display: block;
 }
@@ -603,8 +603,8 @@ span {
   font-family: 'Montserrat', sans-serif;
   top:2050px; left:30%;
   position: absolute;
-  height: 100px;
-  width:100px;
+  height: 110px;
+  width:110px;
   color: white;
   box-shadow: 0px 0px 7px 3px #2957b3;
   background: radial-gradient(#0f285c,#15387d,#2957b3);
@@ -614,8 +614,8 @@ span {
 .link-3:hover{
   box-shadow: 0px 0px 14px 6px white;
   background: radial-gradient(#2957b3,#15387d,#0f285c);
-  height:110px;
-  width:110px;
+  height:120px;
+  width:120px;
 }
 
 .link-4 {
@@ -639,6 +639,20 @@ span {
   background: radial-gradient(#69beff,#3ba0ed,#0874c7);
   height:135px;
   width:135px;
+}
+
+#pagelinks {
+  color: rgb(165, 156, 255);
+  position: fixed;
+  text-align: left;
+  background: none;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: calc(18px + 20 * ((100vw - 300px)/1300));
+  z-index: 100;
+  margin: 0;
 }
 
 .skill_h2, .skill_h3 {
@@ -1015,7 +1029,7 @@ span {
 }
 
 #contact {
-  z-index: 30;
+  z-index: 29;
   display:block;
   width:30%;
   text-align: left;
@@ -1077,6 +1091,9 @@ span {
   }
   #main {
     height: 2000;
+  }
+  #pagelinks {
+    top: 10px; right:10px;
   }
   .star-container {
     position: absolute;
@@ -1226,7 +1243,7 @@ span {
     padding:300px 0 0 0;
     position: relative;
     bottom: 0px;left:0%;
-    z-index:30;
+    z-index:29;
   }
 
   #projects {
@@ -1283,17 +1300,32 @@ span {
   #link-8, #link-5, #link-2{
     left:47%;
   }
-  #link-9, #link-6, #link-3{
+  #link-6, #link-3{
     left:55%;
+  }
+  #link-9{
+    left:30%;
   }
   #link-20a{
     left:25%;
   }
 
-
 }
 @media only screen and (min-width: 550px){
 
+  #pagelinks{
+    top:100px; right:20px;
+  }
+  #special {
+    display: block;
+    position: fixed;
+    padding-top: 140px;
+    padding-left: 20px;
+  }
+
+  #blurb {
+    top:180px;
+  }
   .carousel-wrapper {
     overflow: hidden;
     width: 540px;
@@ -1436,7 +1468,7 @@ span {
     text-decoration: none;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #bfbfbf;
   }
 
   #float-box, #float-box1, #float-box6, #float-box7,#float-boxa,#float-boxb,
@@ -1728,7 +1760,7 @@ span {
     padding:300px 0 0 0;
     position: absolute;
     bottom: 1100px;left:15%;
-    z-index: 30;
+    z-index: 29;
   }
 
   .footer_p {
