@@ -1226,6 +1226,14 @@ span {
     z-index:29;
   }
 
+  .float-p {
+    display:none;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: #bfbfbf;
+  }
+
   #projects {
     margin: 20px;
   }
@@ -1473,6 +1481,7 @@ span {
   #float-box, #float-box1, #float-box6, #float-box7,#float-boxa,#float-boxb,
   #float-box17,#float-box18, #float-boxfc{
     display: flex;
+    color: #bfbfbf;
     align-items: center;
     justify-content: center;
     position: absolute;
