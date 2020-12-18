@@ -1275,10 +1275,11 @@ span {
     color: rgb(125,240,251);
     font-variant: small-caps;
     margin:15px 0px 0px 0px;
+    border-top: 1px solid rgb(165, 156, 255);
   }
 
   .res-span {
-    font-size: calc(20px + 20 * ((100vw - 300px)/1300));
+    font-size: calc(18px + 20 * ((100vw - 300px)/1300));
     margin:5px 0px;
     font-style: italic;
   }
