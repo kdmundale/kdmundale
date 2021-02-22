@@ -538,8 +538,11 @@ span {
   height: 150px;
   width:150px;
   color: white;
-  box-shadow: 0px 0px 7px 3px #7df0fb;
   background: radial-gradient(#25767d,#349ea8,#7df0fb);
+  border-bottom: 4px solid #25767d;
+  border-right: 4px solid #25767d;
+  border-top: 4px solid #7df0fb;
+  border-left: 4px solid #7df0fb;
   z-index: 19;
 }
 
@@ -562,8 +565,11 @@ span {
   height: 200px;
   width:200px;
   color: white;
-  box-shadow: 0px 0px 7px 3px #a49cff;
   background: radial-gradient(#433d80,#5850ab,#a49cff);
+  border-bottom: 4px solid #433d80;
+  border-right: 4px solid #433d80;
+  border-top: 4px solid #a49cff;
+  border-left: 4px solid #a49cff;
   z-index: 18;
 }
 
@@ -586,8 +592,11 @@ span {
   height: 110px;
   width:110px;
   color: white;
-  box-shadow: 0px 0px 7px 3px #2957b3;
   background: radial-gradient(#0f285c,#15387d,#2957b3);
+  border-bottom: 4px solid #0f285c;
+  border-right: 4px solid #0f285c;
+  border-top: 4px solid #2957b3;
+  border-left: 4px solid #2957b3;
   z-index: 18;
 }
 
@@ -610,8 +619,11 @@ span {
   height: 125px;
   width:125px;
   color: white;
-  box-shadow: 0px 0px 7px 3px #69beff;
   background: radial-gradient(#0874c7,#3ba0ed,#69beff);
+  border-bottom: 4px solid #0874c7;
+  border-right: 4px solid #0874c7;
+  border-top: 4px solid #69beff;
+  border-left: 4px solid #69beff;
   z-index: 19;
 }
 .link-4:hover{
